@@ -2,11 +2,11 @@
   "name": "prduction-ready-backend",
   "version": "1.0.0",
   "description": "complete production ready backend try to learn more about",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
     "dist":"npx tsc",
-    "start": "node dist/index.js",
-    "dev": "nodemon src/index.ts",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
     "prepare": "husky",
     "test": "node test.js"
   },
