@@ -1,0 +1,17 @@
+{
+  "name": "prduction-ready-backend",
+  "version": "1.0.0",
+  "description": "complete production ready backend try to learn more about",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "bablu verma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.4"
+  }
+}
