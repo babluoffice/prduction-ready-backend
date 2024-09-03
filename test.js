@@ -1,1 +1,1 @@
-console.log('Running sucessfully');
+console.log('Husky run complete')
