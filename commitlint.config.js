@@ -18,7 +18,12 @@ module.exports = {
           "test",
         ],
       ],
-      "subject-case": [2, "always", "sentence-case"], // Fixed typo from "sentance-case"
+      "subject-case": [
+        2,
+        "always",
+        ["sentence-case", "Sentence Case", "Kebab Case", "Snake Case"], 
+      ],
+      "subject-max-length": [2, "always", 100], // Optional: limit the length of the subject
     },
   };
   
