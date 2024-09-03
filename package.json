@@ -10,10 +10,15 @@
     "prepare": "husky",
     "test": "node test.js",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "format:check":"prettier . --check",
+    "format:fix":"prettier . --fix"
   },
- "lint-staged": {
-  "*.ts":["eslint --fix"]
+  "lint-staged": {
+    "*.ts": [
+      "npm run lint:fix",
+      "npm run format:check"
+    ]
   },
   "author": "bablu verma",
   "license": "ISC",
@@ -27,9 +32,11 @@
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.5.2",
     "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.5",
     "lint-staged": "^12.3.2",
     "nodemon": "^3.1.4",
+    "prettier": "3.3.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.4.0"
